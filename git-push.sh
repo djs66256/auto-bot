@@ -56,3 +56,4 @@ done
 
 echo "===========END==========="
 echo "[GIT-PUSH] Thank you for using git-push script"
+echo "===========END==========="
