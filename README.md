@@ -8,7 +8,7 @@ crontab -e
 
 添加定时任务： 在打开的编辑器中，添加一行来指定定时任务。
 ```bash
-30 9 * * * /path/to/your/script.sh
+30 9 * * * /path/to/your/script.sh 2>&1
 ```
 
 验证 crontab 文件： 你可以通过以下命令查看当前用户的 cron 任务列表，确认你的任务是否已经添加成功：
@@ -21,3 +21,11 @@ crontab -l
 ```bash
 chmod +x /path/to/your/script.sh
 ```
+
+Operation not permitted：
+you have to add cron as "parent" app to the user's Security & Privacy > Privacy > Full Disk Access apps/execs.
+
+1. click the `+` button
+2. hit `⌘⇧G`
+3. enter `/usr/sbin`
+4. double click the `cron` file.
