@@ -12,7 +12,7 @@ function auto_git_operations() {
     echo "-----------BEGIN-------------"
     echo "[GIT-PUSH] start git add all and commit using auto-commit"
 
-    gce
+    auto_commit
 
     echo "[GIT-PUSH] start git pull"
 
