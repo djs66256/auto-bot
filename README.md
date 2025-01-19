@@ -29,3 +29,15 @@ you have to add cron as "parent" app to the user's Security & Privacy > Privacy 
 2. hit `⌘⇧G`
 3. enter `/usr/sbin`
 4. double click the `cron` file.
+
+## 代理设置
+
+科学上网，对ssh设置代理，在ssh配置文件（~/.ssh/config）中添加以下内容：
+
+```bash
+Host github.com
+    HostName ssh.github.com
+    Port 443
+    User git
+    ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
+```
