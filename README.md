@@ -41,3 +41,13 @@ Host github.com
     User git
     ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 ```
+
+## VIM 高亮
+
+修改 vim 的配色方案，在 ~/.vimrc 文件中添加以下内容：
+
+```bash
+syntax on
+set nu!
+set autoindent
+```
